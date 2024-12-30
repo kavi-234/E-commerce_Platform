@@ -28,10 +28,12 @@ class ProfileController extends Controller
     {
         $request->user()->fill($request->validated());
 
+        // If the email is updated, set email_verified_at to null
         if ($request->user()->isDirty('email')) {
             $request->user()->email_verified_at = null;
         }
 
+        // Save the user data
         $request->user()->save();
 
         return Redirect::route('profile.edit')->with('status', 'profile-updated');
@@ -52,9 +54,30 @@ class ProfileController extends Controller
 
         $user->delete();
 
+        // Invalidate the session and regenerate token
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
         return Redirect::to('/');
+    }
+
+    /**
+     * Redirect users based on their role (admin or user).
+     */
+    public function index()
+    {
+        if (auth()->check()) {
+            $user = auth()->user();
+
+            // Check the role of the user and redirect accordingly
+            if ($user->isAdmin()) {
+                return redirect()->route('admin.dashboard');  // Redirect to admin dashboard
+            } else {
+                return view('user.dashboard');  // Show regular user dashboard
+            }
+        }
+
+        // If not logged in, redirect to login page
+        return redirect('login');
     }
 }

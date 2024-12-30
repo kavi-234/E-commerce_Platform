@@ -4,6 +4,18 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\AdminController;
+
+Route::middleware(['auth', 'admin'])->group(function () {
+    Route::get('admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
+});
+
+
+Route::middleware('auth:sanctum')->post('/cart/{productId}', [CartController::class, 'addToCart']);
+Route::middleware('auth:sanctum')->delete('/cart/{productId}', [CartController::class, 'deleteFromCart']);
+
+
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
 
 Route::get('/', function () {

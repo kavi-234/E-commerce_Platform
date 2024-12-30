@@ -30,6 +30,17 @@
             <main>
                 {{ $slot }}
             </main>
+
+            <!-- Display user role (admin/user) -->
+            @auth
+                <div class="bg-gray-200 p-4 text-center mt-4">
+                    @if(auth()->user()->isAdmin())
+                        <p>Welcome, Admin!</p>
+                    @else
+                        <p>Welcome, {{ auth()->user()->name }}! You are a regular user.</p>
+                    @endif
+                </div>
+            @endauth
         </div>
     </body>
 </html>
