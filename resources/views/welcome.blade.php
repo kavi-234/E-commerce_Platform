@@ -150,32 +150,32 @@
         <div class="product-grid">
             <div class="product">
                 <img src="https://th.bing.com/th/id/OIF.VluqxJIZ2ocKryRfbYxzxA?rs=1&pid=ImgDetMain" alt="Product 1">
-                <p>Product Name</p>
+                <p>Sweater</p>
                 <p>$99.99</p>
             </div>
             <div class="product">
                 <img src="https://static.vecteezy.com/system/resources/previews/000/197/694/original/premium-cosmetic-brand-advertising-concept-design-with-glitters-vector.jpg" alt="Product 2">
-                <p>Product Name</p>
+                <p>Cosmetics</p>
                 <p>$49.99</p>
             </div>
             <div class="product">
-                <img src="https://lodamaitis.com/cdn/shop/files/Bx3W9QCPCH1LLgxp.webp?v=1734969926&width=533" alt="Product 3">
-                <p>Product Name</p>
+                <img src="https://th.bing.com/th/id/OIP.ksZyUasNjX_vtFh4INjq4QAAAA?rs=1&pid=ImgDetMain" alt="Product 3">
+                <p>Hat</p>
                 <p>$19.99</p>
             </div>
             <div class="product">
                 <img src="https://th.bing.com/th?id=OIF.5%2fvRXEScJNtQdv1Zp1zhjg&rs=1&pid=ImgDetMain" alt="Product 4">
-                <p>Product Name</p>
+                <p>Frock</p>
                 <p>$99.99</p>
             </div>
             <div class="product">
                 <img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=1024&h=536&url=https://static.onecms.io/wp-content/uploads/sites/28/2014/10/local-experts-london-best-womens-clothing-boutiques.jpg" alt="Product 5">
-                <p>Product Name</p>
+                <p>Party Frock</p>
                 <p>$49.99</p>
             </div>
             <div class="product">
                 <img src="https://th.bing.com/th?id=OIF.M2oX2Hf4%2fBxMN3V5p%2f759Q&rs=1&pid=ImgDetMain" alt="Product 6">
-                <p>Product Name</p>
+                <p>Handbag</p>
                 <p>$19.99</p>
             </div>
         </div>
