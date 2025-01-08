@@ -7,6 +7,14 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\AdminController;
 
+
+Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
 Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
 });

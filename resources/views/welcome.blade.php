@@ -106,6 +106,20 @@
             object-fit: cover;
             border-radius: 8px; /* Matches the product box */
         }
+        .add-to-cart {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #febd69;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .add-to-cart:hover {
+            background-color: #ff9e2f; /* Darker shade on hover */
+        }
         footer {
             background-color: #232f3e;
             color: white;
@@ -149,34 +163,40 @@
         <h2>Featured Products</h2>
         <div class="product-grid">
             <div class="product">
-                <img src="https://th.bing.com/th/id/OIF.VluqxJIZ2ocKryRfbYxzxA?rs=1&pid=ImgDetMain" alt="Product 1">
+                <img src="https://th.bing.com/th/id/OIP.EvzIDzViOEaw-wz8ypBVoAHaJ4?rs=1&pid=ImgDetMain" alt="Product 1">
                 <p>Sweater</p>
                 <p>$99.99</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="https://static.vecteezy.com/system/resources/previews/000/197/694/original/premium-cosmetic-brand-advertising-concept-design-with-glitters-vector.jpg" alt="Product 2">
                 <p>Cosmetics</p>
                 <p>$49.99</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="https://th.bing.com/th/id/OIP.ksZyUasNjX_vtFh4INjq4QAAAA?rs=1&pid=ImgDetMain" alt="Product 3">
                 <p>Hat</p>
                 <p>$19.99</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
             <div class="product">
-                <img src="https://th.bing.com/th?id=OIF.5%2fvRXEScJNtQdv1Zp1zhjg&rs=1&pid=ImgDetMain" alt="Product 4">
+                <img src="https://th.bing.com/th/id/OIF.OVfug2kQVU1WH48HaI5tFw?rs=1&pid=ImgDetMain" alt="Product 4">
                 <p>Frock</p>
                 <p>$99.99</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=1024&h=536&url=https://static.onecms.io/wp-content/uploads/sites/28/2014/10/local-experts-london-best-womens-clothing-boutiques.jpg" alt="Product 5">
                 <p>Party Frock</p>
                 <p>$49.99</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
             <div class="product">
-                <img src="https://th.bing.com/th?id=OIF.M2oX2Hf4%2fBxMN3V5p%2f759Q&rs=1&pid=ImgDetMain" alt="Product 6">
+                <img src="https://th.bing.com/th/id/OIP.vQnXiGwl2BRkZSrzcEEG4wHaHa?rs=1&pid=ImgDetMain" alt="Product 6">
                 <p>Handbag</p>
                 <p>$19.99</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
         </div>
     </section>
